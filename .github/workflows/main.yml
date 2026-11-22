@@ -8,17 +8,19 @@ on:
 
 jobs:
   bulid:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
 
 
     steps:
-      - name:"printing files before"
-        run:ls
+    
 
     - uses:actions/checkout@v3
+    - name: "docker login"
+      run: docker login --username usifabuzeid      --password dckr_pat_q4v9iR_iDQt4qFushQPEB4WapdY
 
-      - name:"printing files after"
-        run:ls  
+    
+
+
 
 
 
