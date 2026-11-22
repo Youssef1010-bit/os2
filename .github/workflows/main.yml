@@ -1,1 +1,23 @@
 
+on:
+  push:
+    branches:
+      - master
+
+
+
+jobs:
+  bulid:
+    runs-on:ubuntu-latest
+
+
+    steps:
+      - name:"printing path"
+        run:pwd
+      -name:"printing name"
+        run:echo youssef
+
+
+
+
+
