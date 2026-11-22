@@ -12,10 +12,13 @@ jobs:
 
 
     steps:
-      - name:"printing path"
+      - name:"printing files before"
         run:ls
-      - name:"printing files"
-        
+
+    - users:actions/checkout@v3
+
+      - name:"printing files after"
+        run:ls  
 
 
 
